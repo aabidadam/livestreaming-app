@@ -1,0 +1,31 @@
+<html>
+<body>
+<h1> Saved Video Streaming</h1>
+  <!-- <video width="320" height="240" controls autoplay> -->
+    <!-- <source src="{{ url_for('static', filename="myvideo.webm") }}" type="video/webm"> -->
+    <!-- <source src="{{ url_for('static', filename='../static/myvideo.webm') }}" type="video/webm" alt="Video not rendering"> -->
+    <img src="{{ url_for('static', filename='../static/0.png') }}" alt="Example Image">
+
+    <video width="320" height="240" controls>
+      <source src="{{ url_for('static', filename='../static/myvideo.mp4') }}" type="video/mp4">
+      <!-- <source src="movie.ogg" type="video/ogg"> -->
+    Your browser does not support the video tag.
+    </video>
+
+
+    <video width="320" height="240" controls>
+      <source src="https://rtsp.me/embed/eaKQrA69/" type="video/mp4">
+      <!-- <source src="movie.ogg" type="video/ogg"> -->
+    Your browser does not support the video tag.
+    </video>
+
+    <!-- <div>
+      <iframe width="640" height="480" src="https://rtsp.me/embed/eaKQrA69/" frameborder="0" allowfullscreen></iframe>
+      <p align="right">powered by <a href="https://rtsp.me" title ='RTSP.ME - Free website RTSP video steaming service' target="_blank" >rtsp.me</a></p>
+    </div> -->
+
+    <div><iframe width="640" height="480" src="https://rtsp.me/embed/eaKQrA69/" frameborder="0" allowfullscreen controls></iframe><p align="right">powered by <a href="https://rtsp.me" title ='RTSP.ME - Free website RTSP video steaming service' target="_blank" >rtsp.me</a></p></div>
+
+<!-- video not available</video> -->
+</body>
+</html>
